@@ -1,0 +1,6 @@
+@media (min-width: 640px) {
+  .sm\:grid-cols-footer {
+    display: grid;
+    grid-template-columns: 320px auto;
+  }
+}
