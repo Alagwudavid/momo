@@ -22,7 +22,7 @@ const Footer = () => {
             />
             <div className="text-[16px] mt-2 flex flex-row flex-wrap gap-1">
               We are here to make <br /> e-commerce easier and <br /> cost
-              effective for Students in Africa.
+              effective for Students in Nigeria.
             </div>
             <div className="text-[16px] mt-3 flex flex-row gap-2 items-center">
               Powered by

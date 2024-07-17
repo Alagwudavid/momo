@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 
 export default function ServicePage() {
   return (
-    <div className="mx-auto my-[48px] max-w-screen-lg min-h-[500px] flex flex-col sm:grid sm:grid-cols-2">
-      <div className="py-4 flex flex-col items-center sm:items-start justify-center">
+    <div className="mx-auto my-20 sm:px-8 rounded-3xl max-w-screen-xl sm:h-[430px] flex flex-col sm:grid sm:grid-cols-2 bg-black text-white">
+      <div className="flex flex-col items-center sm:items-start justify-center">
         <motion.h1
-          className="md:text-[42px] text-[30px] font-bold leading-10 my-5 sm:text-left text-center"
+          // className="md:text-[42px] text-[30px] font-bold leading-10 my-5 sm:text-left text-center"
+          className="text-4xl font-bold bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 bg-clip-text text-transparent hover:bg-gradient-to-bl"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
@@ -20,10 +21,10 @@ export default function ServicePage() {
             duration: 1,
           }}
         >
-          Bringing The Producers Closer to you.
+          Bringing e-commerce closer to you.
         </motion.h1>
-        <motion.div
-          className="text-[24px] sm:text-left text-center"
+        <motion.p
+          className="text-[24px] sm:text-left text-center mb-3"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
@@ -34,11 +35,13 @@ export default function ServicePage() {
             duration: 1,
           }}
         >
-          We are here to make e-commerce easier and more cost-effective for
-          students in Africa.
-        </motion.div>
+          We are here to make e-commerce easier and more cost-effective for{" "}
+          <span className="font-semibold underline text-green-400 decoration-green-400 decoration-wavy cursor-default">
+            students
+          </span>{" "}
+          in Nigeria.
+        </motion.p>
         <motion.div
-          className="my-5"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
@@ -51,7 +54,7 @@ export default function ServicePage() {
         >
           <Link
             href={"/en"}
-            className="bg-[#eae8ff] text-[#1c284d] font-semibold px-4 py-2 rounded-md gap-2 flex flex-row min-w-[150px]"
+            className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 gap-2 flex flex-row"
           >
             Shop now
             <img
