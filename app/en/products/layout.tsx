@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { Palanquin } from "next/font/google";
-import "@/shared/styles/globals.css";
-
 const palanquin = Palanquin({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
- });
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Momo marketplace | a student to vendor based ecommerce platform",

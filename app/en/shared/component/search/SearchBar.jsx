@@ -63,7 +63,7 @@ const Search = () => {
           type="search"
           role="searchbox"
           autoComplete="off"
-          className="h-[38px] w-full overflow-hidden rounded-full border border-solid text-[#1c284d] pl-10 pr-3 bg-[#eae8ff] focus:outline-none text-[17px] font-semibold"
+          className="h-[45px] w-full overflow-hidden rounded-full border border-solid text-[#1c284d] pl-10 pr-3 bg-[#eae8ff] focus:outline-none text-[17px] font-semibold"
           placeholder="'Amazon Gift Card'"
           value={query}
           onChange={handleInputChange}

@@ -1,6 +1,5 @@
 "use client";
 
-import SubNavbarLarge from "./SubNavbarLarge.jsx";
 import SubNavbarMobile from "./SubNavbarMobile";
 import Search from "@/en/shared/component/search/SearchBar";
 import Image from "next/image";
@@ -12,6 +11,7 @@ import AppIcon from "@/en/shared/icon/svg/momologo-marketplace.svg";
 import LoginIcon from "@/en/shared/icon/svg/login-outline.svg";
 import SignUpIcon from "@/en/shared/icon/svg/user-add.svg";
 import CartIcon from "@/en/shared/icon/svg/cart.svg";
+import NavMenu from "./nav-menu";
 //END ICONS
 
 const Navbar = () => {
@@ -19,9 +19,9 @@ const Navbar = () => {
     <>
       <div className="mx-auto py-4 max-w-screen-2xl px-5 sm:px-6 lg:px-8 bg-white h-[72px] border-b-[1px]">
         <div className="flex flex-row justify-between mx-auto text-[16px]">
-          <div className="flex justify-center items-center cursor-default">
+          <Link href="/en" className="flex justify-center items-center">
             <Image src={AppIcon} alt="Icon" width={162} height={35} />
-          </div>
+          </Link>
           <div className="hidden sm:block">
             <Search />
           </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/home"
+                href="/en/account"
                 className="flex flex-row gap-1 items-center justify-center"
               >
                 <Image src={UserSquareIcon} alt="Icon" width={28} height={28} />
@@ -64,16 +64,10 @@ const Navbar = () => {
       <div className="sm:hidden block mx-auto py-2 max-w-screen-2xl px-4 bg-white border-[1px]">
         <SubNavbarMobile />
       </div>
-      <div
-        className="hidden sm:block mx-auto py-2 max-w-screen-2xl px-4 bg-[#fff] text-black font-semibold z-[1] relative"
-        style={{
-          boxShadow: `rgba(0, 0, 0, 0.12) 0px 4px 12px 0px`,
-        }}
-      >
-        <SubNavbarLarge />
+      <div className="hidden sm:block mx-auto max-w-screen-2xl bg-[#fff] text-black font-semibold z-[1] shadow">
+        <NavMenu />
       </div>
     </>
-    // <h1>Navbar</h1>
   );
 };
 

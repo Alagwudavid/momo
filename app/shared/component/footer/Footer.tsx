@@ -20,11 +20,11 @@ const Footer = () => {
               width={130}
               height={40}
             />
-            <div className="text-[16px] mt-2">
-              We are here to make e-commerce easier and cost effective for our
-              the students in Africa.
+            <div className="text-[16px] mt-2 flex flex-row flex-wrap gap-1">
+              We are here to make <br /> e-commerce easier and <br /> cost
+              effective for Students in Africa.
             </div>
-            <div className="text-[12px] mt-3 flex flex-row gap-2">
+            <div className="text-[16px] mt-3 flex flex-row gap-2 items-center">
               Powered by
               <Link href="https://wynx.vercel.app">
                 <Image
@@ -32,11 +32,12 @@ const Footer = () => {
                   alt="wynxIcon"
                   width={70}
                   height={30}
+                  className="-mb-1"
                 />
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center sm:grid sm:grid-cols-4 gap-3">
+          <div className="flex flex-col sm:grid sm:grid-cols-4 gap-3">
             <div className="h-full">
               <span className="font-bold">About</span>
               <ul>
@@ -46,8 +47,8 @@ const Footer = () => {
                 {/* <li>Purchase Orders</li> */}
               </ul>
             </div>
-            <div className="h-full flex flex-col gap-2">
-              <span className="font-bold">Our Apps</span>
+            <div className="h-full flex flex-col gap-1">
+              <span className="font-bold mb-1">Our Apps</span>
               <Image
                 src="/images/google-play_banner.png"
                 alt="Icon"

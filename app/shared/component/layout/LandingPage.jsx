@@ -65,26 +65,59 @@ export default function LandingPage() {
             duration: 1,
           }}
         >
-          <ul className="flex -space-x-4 rtl:space-x-reverse">
-            <li className="bg-[#1c284d] text-[#eae8ff] px-4 py-2 rounded-full">
-              A
-            </li>
-            <li className="bg-red-700 text-[#eae8ff] px-4 py-2 rounded-full">
-              B
-            </li>
-            <li className="bg-blue-700 text-[#eae8ff] px-4 py-2 rounded-full">
-              C
-            </li>
-            <li className="bg-green-700 text-[#eae8ff] px-4 py-2 rounded-full">
-              D
-            </li>
-            <li
-              className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-black border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
+          <div className="flex -space-x-4 rtl:space-x-reverse relative">
+            <Link className="hover:-mt-2 transition-all duration-300" href="#">
+              <img
+                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                alt="Icon"
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-[#1c284d]"
+              />
+            </Link>
+            <Link className="hover:-mt-2 transition-all duration-300" href="#">
+              <img
+                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                alt="Icon"
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-[#1c284d]"
+              />
+            </Link>
+            <Link className="hover:-mt-2 transition-all duration-300" href="#">
+              <img
+                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                alt="Icon"
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-[#1c284d]"
+              />
+            </Link>
+            <Link className="hover:-mt-2 transition-all duration-300" href="#">
+              <img
+                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                alt="Icon"
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-[#1c284d]"
+              />
+            </Link>
+            <Link className="hover:-mt-2 transition-all duration-300" href="#">
+              <img
+                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                alt="Icon"
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-[#1c284d]"
+              />
+            </Link>
+            <Link
+              className="hover:-mt-2 transition-all duration-300 flex items-center justify-center w-[50px] h-[50px] text-xs font-medium text-white bg-black rounded-full hover:bg-gray-600"
               href="#"
             >
-              +99
-            </li>
-          </ul>
+              2m+
+            </Link>
+          </div>
         </motion.div>
       </div>
       <div className="flex items-center justify-center relative">

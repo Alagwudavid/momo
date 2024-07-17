@@ -102,27 +102,154 @@ export const FeaturedProducts = [
     offer: "5%",
     bg: f8,
   },
+  {
+    id: 1,
+    storeName: "Lg Official",
+    name: "Hp Espiron '15inch aspire 2024 model student laptop",
+    price: "7,500",
+    offer: "-20%",
+    bg: f1,
+  },
+  {
+    id: 2,
+    storeName: "Apple Store",
+    name: "iPhone 15",
+    price: "7,500",
+    offer: "-10%",
+    bg: f2,
+  },
+  {
+    id: 3,
+    storeName: "Nexus Electronics",
+    name: "Nexus Combo Cooker",
+    price: "101,830",
+    offer: "-12%",
+    bg: f3,
+  },
+  {
+    id: 4,
+    storeName: "Angel global",
+    name: "Hand bags",
+    price: "67,200",
+    offer: "50%",
+    bg: f4,
+  },
+  {
+    id: 5,
+    storeName: "Prime Luxury's",
+    name: "Baby up&down",
+    price: "7,500",
+    offer: "12%",
+    bg: f5,
+  },
+  {
+    id: 6,
+    storeName: "Nike Official",
+    name: "Nike Fly 2023",
+    price: "7,500",
+    offer: "",
+    bg: f6,
+  },
+  {
+    id: 7,
+    storeName: "Nexus Electronics",
+    name: "Generator 3200HP",
+    price: "7,500",
+    offer: "",
+    bg: f7,
+  },
+  {
+    id: 8,
+    storeName: "Samsung official",
+    name: "Samsung 42'inch O'led TV",
+    price: "117,500",
+    offer: "5%",
+    bg: f8,
+  },
+  {
+    id: 1,
+    storeName: "Lg Official",
+    name: "Hp Espiron '15inch aspire 2024 model student laptop",
+    price: "7,500",
+    offer: "-20%",
+    bg: f1,
+  },
+  {
+    id: 2,
+    storeName: "Apple Store",
+    name: "iPhone 15",
+    price: "7,500",
+    offer: "-10%",
+    bg: f2,
+  },
+  {
+    id: 3,
+    storeName: "Nexus Electronics",
+    name: "Nexus Combo Cooker",
+    price: "101,830",
+    offer: "-12%",
+    bg: f3,
+  },
+  {
+    id: 4,
+    storeName: "Angel global",
+    name: "Hand bags",
+    price: "67,200",
+    offer: "50%",
+    bg: f4,
+  },
+  {
+    id: 5,
+    storeName: "Prime Luxury's",
+    name: "Baby up&down",
+    price: "7,500",
+    offer: "12%",
+    bg: f5,
+  },
+  {
+    id: 6,
+    storeName: "Nike Official",
+    name: "Nike Fly 2023",
+    price: "7,500",
+    offer: "",
+    bg: f6,
+  },
+  {
+    id: 7,
+    storeName: "Nexus Electronics",
+    name: "Generator 3200HP",
+    price: "7,500",
+    offer: "",
+    bg: f7,
+  },
+  {
+    id: 8,
+    storeName: "Samsung official",
+    name: "Samsung 42'inch O'led TV",
+    price: "117,500",
+    offer: "5%",
+    bg: f8,
+  },
 ];
 
 // OFFERS //
-import o1 from "@/en/shared/image/Artboard_1.png";
-import o2 from "@/en/shared/image/Artboard_2.png";
-import o3 from "@/en/shared/image/Artboard_3.png";
-import o4 from "@/en/shared/image/Artboard_4.png";
-import o5 from "@/en/shared/image/Artboard_5.png";
-import o6 from "@/en/shared/image/Artboard_6.png";
+import o1 from "@/en/shared/image/shop-banner-one.jpg";
+import o2 from "@/en/shared/image/shop-banner-two.jpg";
+import o3 from "@/en/shared/image/shop-banner-three.jpg";
+import o4 from "@/en/shared/image/shop-banner-four.jpg";
+import o5 from "@/en/shared/image/shop-banner-five.jpg";
+import o6 from "@/en/shared/image/shop-banner-six.jpg";
+
+import l1 from "@/en/shared/image/user-thumbnail-one.jpg";
+import l2 from "@/en/shared/image/logo.jpg";
 
 export const Offers = [
-  { id: 1, name: "Kith Storefront", bg: o1 },
-  { id: 2, name: "Mr.beast.com", bg: o2 },
-  { id: 3, name: "G Fuel", bg: o3 },
-  { id: 4, name: "SNOW® Oral Care", bg: o4 },
-  { id: 5, name: "School Essentials", bg: o5 },
-  { id: 6, name: "Miscellenous Deals", bg: o6 },
-  { id: 7, name: "SNOW® Oral Care", bg: o4 },
-  { id: 8, name: "School Essentials", bg: o5 },
-  { id: 9, name: "Miscellenous Deals", bg: o6 },
-  { id: 10, name: "SNOW® Oral Care", bg: o4 },
-  { id: 11, name: "School Essentials", bg: o5 },
-  { id: 12, name: "Miscellenous Deals", bg: o6 },
+  { id: 1, name: "Kith Storefront", bg: o1, brandImage: l1 },
+  { id: 2, name: "Mr.beast.com", bg: o2, brandImage: l2 },
+  { id: 3, name: "G Fuel", bg: o3, brandImage: l1 },
+  { id: 4, name: "SNOW® Oral Care", bg: o4, brandImage: l2 },
+  { id: 5, name: "School Essentials", bg: o5, brandImage: l1 },
+  { id: 6, name: "Miscellenous Deals", bg: o6, brandImage: l2 },
+  { id: 7, name: "Rugged Luxury", bg: o4, brandImage: l1 },
+  { id: 10, name: "MyMy Inc.", bg: o4, brandImage: l2 },
 ];

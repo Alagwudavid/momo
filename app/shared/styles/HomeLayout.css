@@ -4,17 +4,16 @@
 
 .grid-col-2_3 {
   grid-column: 2 / span 3;
-  max-height: 394px;
-  min-height: 394px;
+  max-height: 410px;
+  min-height: 370px;
 }
 
 .grid-fr-items {
-  max-height: 185px;
-  min-height: 185px;
+  min-height: 173px;
 }
 
 .grid-fr-3_4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 24px;
   row-gap: 24px;
 }

@@ -15,12 +15,14 @@ const Navbar = () => {
       <div className="mx-auto py-4 max-w-screen-xl px-5 lg:px-7 bg-white block">
         <div className="grid md:grid-cols-3 grid-cols-2 justify-around mx-auto text-[16px]">
           <div className="flex items-center">
-            <Image
-              src="/images/momo-text-icon.svg"
-              alt="Icon"
-              width={110}
-              height={30}
-            />
+            <Link href="/">
+              <Image
+                src="/images/momo-text-icon.svg"
+                alt="Icon"
+                width={110}
+                height={30}
+              />
+            </Link>
           </div>
           <div className="hidden md:flex flex-row gap-1 items-center justify-center font-semibold">
             <MajorLinks />
