@@ -2,73 +2,57 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import addItemIcon from "@/en/shared/icon/svg/add-square.svg";
-import sparklesIcon from "@/en/shared/icon/svg/sparkles.svg";
-import fireIcon from "@/en/shared/icon/svg/fire-filled.svg";
-import recentIcon from "@/en/shared/icon/svg/recent.svg";
-import productIcon from "@/en/shared/icon/svg/cart-shopping-fast.svg";
-import categoryIcon from "@/en/shared/icon/svg/category-solid.svg";
-import shopIcon from "@/en/shared/icon/svg/shop-outline.svg";
-import accountIcon from "@/en/shared/icon/svg/user-circle.svg";
-import analyticsIcon from "@/en/shared/icon/svg/progress-report.svg";
-import settingIcon from "@/en/shared/icon/svg/setting-gear.svg";
+import randomIcon from "@/en/shared/icon/svg/add-square.svg";
+
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col items-center font-medium">
-      <div className="flex flex-col border-[1px] rounded-lg mt-5 bg-[#eae8ff] min-w-[197px]">
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={addItemIcon} alt="Icon" width={20} height={18} />
-          Add item
+    <div className="flex flex-col gap-3 font-medium h-full w-[225px] p-4 bg-white overflow-y-auto">
+      <span className="font-bold text-black text-lg">Filter Product</span>
+      <div className="flex flex-col gap-2 w-full overflow-hidden">
+      <span className="text-black text-base font-semibold">By Gender</span>
+      <div className="flex flex-row flex-wrap justify-between gap-2 w-full overflow-hidden">
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-black text-white">
+          Male
         </Link>
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={productIcon} alt="Icon" width={20} height={18} />
-          Products
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-[#eae8ff]">
+      Female
         </Link>
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={categoryIcon} alt="Icon" width={20} height={18} />
-          Categories
-        </Link>
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={shopIcon} alt="Icon" width={20} height={18} />
-          Stores
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-[#eae8ff]">
+      Unisex
         </Link>
       </div>
-      <div className="flex flex-col border-[1px] rounded-lg mt-5 bg-[#eae8ff] min-w-[197px]">
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={accountIcon} alt="Icon" width={20} height={18} />
-          Account
+      </div>
+      <div className="flex flex-col gap-2 mt-5 w-full overflow-hidden">
+      <span className="text-black text-base font-semibold">By Price</span>
+      <input type="number" name="price" autoComplete="off"
+          className="h-[40px] w-full overflow-hidden rounded-md border border-solid text-[#1c284d] p-2 bg-white focus:outline-none text-[14px]"
+          placeholder="Enter Price"
+      />
+          <div className="flex flex-row gap-2 w-full overflow-hidden">
+      <Link href="#" className="w-full px-2.5 py-1 flex flex-col rounded-md bg-[#eae8ff]">
+      <span className="text-xs text-gray-400">Max Price</span>
+      <span className="text-base">₦1,350</span>
         </Link>
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={analyticsIcon} alt="Icon" width={20} height={18} />
-          Analytics{" "}
-          <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-1">
-            pro
-          </span>
-        </Link>
-        <Link href="#" className="px-4 py-2 flex flex-row items-center gap-2">
-          <Image src={settingIcon} alt="Icon" width={20} height={20} />
-          Setting
+      <Link href="#" className="w-full px-2.5 py-1 flex flex-col rounded-md text-white bg-black">
+      <span className="text-xs text-gray-400">Max Price</span>
+      <span className="text-base">₦100,000</span>
         </Link>
       </div>
-      <div className="relative border-[1px] rounded-lg mt-5 px-6 py-2 text-[14px] block text-center bg-[#eae8ff] min-w-[197px]">
-        <div className="relative">&copy;2024 name llc,</div>
-        <span>
-          by{" "}
-          <a
-            href="https://www.wynx.vercel.app"
-            className="hover:text-[#390278]"
-          >
-            wynx softwares llc
-          </a>
-        </span>
-        <ul className="flex flex-row flex-wrap gap-1 items-center">
-          <li className="hover:underline">About</li>
-          <span className="bg-gray-400 p-[2px] rounded-full h-[2px]"></span>
-          <li className="hover:underline">Legal</li>
-          <span className="bg-gray-400 p-[2px] rounded-full h-[2px]"></span>
-          <li className="hover:underline">Advertise</li>
-        </ul>
+      </div>
+      <div className="flex flex-col gap-2 mt-5 w-full overflow-hidden">
+      <span className="text-black text-base font-semibold">By Location</span>
+      <div className="flex flex-row flex-wrap justify-between gap-2 w-full overflow-hidden">
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-black text-white">
+          Lagos
+        </Link>
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-[#eae8ff]">
+      Enugu
+        </Link>
+      <Link href="#" className="px-6 py-2 flex items-center rounded-md bg-[#eae8ff]">
+      Imo
+        </Link>
+      </div>
       </div>
     </div>
   );

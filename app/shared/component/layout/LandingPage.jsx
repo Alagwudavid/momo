@@ -19,9 +19,9 @@ export default function LandingPage() {
             ease: "easeIn",
             duration: 1,
           }}
-          src="/images/momo-long-text-logo.svg"
-          alt="momo icon logo"
-          width={170}
+          src="/images/kiosk-long-text-logo.svg"
+          alt="kiosk icon logo"
+          width={120}
           height={50}
         />
         <motion.h1
@@ -66,15 +66,6 @@ export default function LandingPage() {
           }}
         >
           <div className="flex -space-x-4 rtl:space-x-reverse relative">
-            <Link className="hover:-mt-2 transition-all duration-300" href="#">
-              <img
-                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                alt="Icon"
-                width={50}
-                height={50}
-                className="rounded-full border-2 border-[#1c284d]"
-              />
-            </Link>
             <Link className="hover:-mt-2 transition-all duration-300" href="#">
               <img
                 src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"

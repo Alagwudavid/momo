@@ -1,35 +1,28 @@
 "use client";
 import React, { useState, useEffect } from "react";
-// import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-
 import Image from "next/image";
+import Link from "next/link";
+import { categories, products } from "@/en/shared/constant/constants";
 
-//ICONS
+// ICONS
 import MagnifyingGlassIcon from "@/shared/icon/svg/magnifying-glass.svg";
-//END ICONS
+// END ICONS
 
 const Search = () => {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [isSuggestionsVisible, setSuggestionsVisible] = useState(false);
 
-  // Example list of products (replace this with your API call or database query)
-  const productList = [
-    "Amazon Gift Card",
-    "Apple iPhone 13",
-    "Samsung Galaxy S21",
-    "Sony WH-1000XM4 Headphones",
-    "Dell XPS 13 Laptop",
-    "Nike Air Max Sneakers",
-    "Adidas Running Shoes",
-    "Google Pixel 6",
-  ];
-
   useEffect(() => {
     if (query) {
-      const filteredSuggestions = productList.filter((product) =>
-        product.toLowerCase().includes(query.toLowerCase())
-      );
+      const filteredSuggestions = [
+        ...categories.filter((category) =>
+          category.name.toLowerCase().includes(query.toLowerCase())
+        ),
+        ...products.filter((product) =>
+          product.name.toLowerCase().includes(query.toLowerCase())
+        ),
+      ];
       setSuggestions(filteredSuggestions);
       setSuggestionsVisible(true);
     } else {
@@ -43,7 +36,7 @@ const Search = () => {
   };
 
   const handleSuggestionClick = (suggestion) => {
-    setQuery(suggestion);
+    setQuery(suggestion.name);
     setSuggestions([]);
     setSuggestionsVisible(false);
   };
@@ -63,27 +56,41 @@ const Search = () => {
           type="search"
           role="searchbox"
           autoComplete="off"
-          className="h-[45px] w-full overflow-hidden rounded-full border border-solid text-[#1c284d] pl-10 pr-3 bg-[#eae8ff] focus:outline-none text-[17px] font-semibold"
-          placeholder="'Amazon Gift Card'"
+          className="h-[40px] w-full overflow-hidden rounded-full border border-solid text-[#1c284d] pl-10 pr-3 bg-white focus:outline-none text-[14px]"
+          placeholder="Search for products or categories..."
           value={query}
           onChange={handleInputChange}
         />
       </div>
       {isSuggestionsVisible && (
-        <ul className="absolute z-10 top-full w-full bg-white border border-gray-300 rounded-lg mt-2 max-h-60 overflow-y-auto">
-          <div className="px-4 py-2 border-[1px] font-bold">
-            Search suggestions:
-          </div>
+        <div
+          className="absolute z-20 top-full w-full bg-white border border-gray-300 rounded-lg mt-2 max-h-[300px] overflow-y-auto"
+          aria-live="polite"
+        >
+          <div className="px-4 py-2 border-b font-bold">Search suggestions:</div>
           {suggestions.map((suggestion, index) => (
-            <li
+            <Link
+              href={`/en/${suggestion.name
+              .toLowerCase()
+              .replace(/ & /g, "-")
+              .replace(/ /g, "-")}`}
               key={index}
-              className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+              className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
               onClick={() => handleSuggestionClick(suggestion)}
             >
-              {suggestion}
-            </li>
+              {suggestion.bg && (
+                <Image
+                  src={suggestion.bg}
+                  alt={suggestion.name}
+                  width={50}
+                  height={30}
+                  className="rounded-md mr-3 border-[1px] border-black"
+                />
+              )}
+              {suggestion.name}
+            </Link>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

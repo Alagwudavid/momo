@@ -6,10 +6,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        selectionBg: "#3572a5",
+        selectionText: "white",
+      },
+    },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
-}
-
+  plugins: [require("tailwind-scrollbar")],
+};

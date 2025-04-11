@@ -8,7 +8,13 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  background-color: #f2f2f2;
+}
 
-@layer components{
-
+@layer components {
+  ::selection {
+    background-color: theme("colors.selectionBg");
+    color: theme("colors.selectionText");
+  }
 }

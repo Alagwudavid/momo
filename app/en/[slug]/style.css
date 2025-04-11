@@ -1,0 +1,13 @@
+@media (min-width: 1340px) {
+    .grid-cols-300-auto{
+        grid-template-columns: 512px auto;
+    }
+}
+
+.grid-cols-auto-40{
+    grid-template-columns: auto 60px 60px;
+}
+
+ul .li-cycle{
+    list-style-type: circle;
+}

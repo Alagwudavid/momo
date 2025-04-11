@@ -4,10 +4,14 @@ import Link from "next/link";
 import LandingPage from "./shared/component/layout/LandingPage.jsx";
 import ServicePage from "./shared/component/layout/ServicePage.jsx";
 import FeaturedLayout from "./shared/component/layout/FeaturedLayout.jsx";
+import Navbar from "@/shared/component/navigation/nav-bar-large";
+import Footer from "@/shared/component/footer/Footer";
+
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <section className="sm:px-[46px] px-3">
         <LandingPage />
         <ServicePage />
@@ -23,6 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -12,15 +12,15 @@ import MajorLinks from "./MajorLinks";
 const Navbar = () => {
   return (
     <>
-      <div className="mx-auto py-4 max-w-screen-xl px-5 lg:px-7 bg-white block">
-        <div className="grid md:grid-cols-3 grid-cols-2 justify-around mx-auto text-[16px]">
+      <div className="mx-auto py-4 max-w-screen-xl px-5 lg:px-7 block">
+        <div className="md:grid md:grid-cols-3 flex flex-row flex-wrap justify-between mx-auto text-[16px]">
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/momo-text-icon.svg"
+                src="/images/kiosk-text.svg"
                 alt="Icon"
-                width={110}
-                height={30}
+                width={80}
+                height={25}
               />
             </Link>
           </div>
@@ -29,14 +29,14 @@ const Navbar = () => {
           </div>
           <div className="flex flex-row gap-2 items-center justify-end p-1 text-[#1c284d] font-semibold">
             <Link
-              href="#"
+              href="/create-account"
               className="flex flex-row gap-1 px-2 py-1 items-center justify-center"
             >
               <Image src={SignUpIcon} alt="Icon" width={20} height={20} />
               <span>Join</span>
             </Link>
             <Link
-              href="#"
+              href="/log-in"
               className="flex flex-row gap-1 px-2 py-1 items-center justify-center bg-[#eae8ff] rounded-full"
             >
               <Image src={LoginIcon} alt="Icon" width={20} height={20} />

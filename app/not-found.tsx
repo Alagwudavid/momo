@@ -6,10 +6,11 @@ export default function NotFound() {
     <div className="div-body">
       <div>
         <h1 className="next-error-h1">404</h1>
-        <div className="inline-block pt-1"
-        >
-          <h2 className="text-[14px] font-normal m-0">This page could not be found.</h2>
-          <h2 className="text-[14px] font-normal m-0">"home"</h2>
+        <div className="inline-block pt-1">
+          <h2 className="text-[14px] font-normal m-0">
+            This page could not be found.
+          </h2>
+          <h2 className="text-[14px] font-normal m-0">"go back"</h2>
         </div>
       </div>
     </div>

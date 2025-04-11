@@ -6,11 +6,10 @@ import { motion } from "framer-motion";
 
 export default function ServicePage() {
   return (
-    <div className="mx-auto my-20 sm:px-8 rounded-3xl max-w-screen-xl sm:h-[430px] flex flex-col sm:grid sm:grid-cols-2 bg-black text-white">
+    <div className="mx-auto my-20 px-3 py-12 sm:px-8 sm:py-0 rounded-3xl max-w-screen-xl sm:h-[430px] flex flex-col gap-3 sm:grid sm:grid-cols-2 bg-black text-white">
       <div className="flex flex-col items-center sm:items-start justify-center">
         <motion.h1
-          // className="md:text-[42px] text-[30px] font-bold leading-10 my-5 sm:text-left text-center"
-          className="text-4xl font-bold bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 bg-clip-text text-transparent hover:bg-gradient-to-bl"
+          className="text-4xl font-bold bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 bg-clip-text text-transparent hover:bg-gradient-to-bl sm:text-left text-center"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Welcome to Momo",
+  title: "Welcome to Kiosk",
   description:
     "An ecommerce web application used to bring official producers and student vendors together to the students",
 };

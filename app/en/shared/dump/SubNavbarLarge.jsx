@@ -11,10 +11,10 @@ import InfoSquareIcon from "@/en/shared/icon/svg/info-square.svg";
 import AppBadgeFill from "@/en/shared/icon/svg/app-badge-fill.svg";
 //END ICONS
 export const categories = [
-  { id: 1, name: "Sell on Momo", icon: PlusSquaredIcon },
-  { id: 2, name: "Buy on Momo", icon: CartIcon },
+  { id: 1, name: "Sell on Kiosk", icon: PlusSquaredIcon },
+  { id: 2, name: "Buy on Kiosk", icon: CartIcon },
   { id: 3, name: "Our apps", icon: AppBadgeFill },
-  // { id: 4, name: "Momo", icon: InfoSquareIcon },
+  // { id: 4, name: "Kiosk", icon: InfoSquareIcon },
   { id: 5, name: "Support & Links", icon: LinkCircleIcon },
 ];
 
